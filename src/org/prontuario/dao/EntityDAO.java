@@ -2,13 +2,18 @@ package org.prontuario.dao;
 
 import java.util.List;
 
-public interface EntityDAO <E>{
-	
-	void save(E e); 
-	E findById(Long id);
-	void update(E e);
+import org.prontuario.exception.PacienteNaoEncontradoException;
+
+public interface EntityDAO<E> {
+
+	void save(E e);
+
+	E findById(Long id) throws PacienteNaoEncontradoException;
+
+	void update(E e) throws PacienteNaoEncontradoException;
+
 	void delete(E e);
+
 	List<E> findAll();
-	
-	
+
 }
