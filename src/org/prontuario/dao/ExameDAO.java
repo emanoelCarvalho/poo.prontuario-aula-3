@@ -8,8 +8,7 @@ public class ExameDAO implements EntityDAO<Exame> {
 
 	@Override
 	public void save(Exame e) {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override

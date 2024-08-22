@@ -3,7 +3,7 @@ package org.prontuario.model;
 import java.util.List;
 
 public interface IPaciente {
-	public Float calcularIMC();
+	public  Float calcularIMC();
 
 	public Float calcularMetabolismoBasal();
 
